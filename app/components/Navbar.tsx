@@ -10,7 +10,10 @@ export default function Navbar() {
     const router = useRouter();
 
     useEffect(() => {
-        setMounted(true);
+        const timer = setTimeout(() => {
+            setMounted(true);
+        }, 0);
+        return () => clearTimeout(timer);
     }, []);
 
 

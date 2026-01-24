@@ -5,6 +5,7 @@ import Head from "next/head";
 import { useRouter } from "next/navigation";
 import Navbar from './Navbar'
 import Footer from './Footer';
+import Banner from "./Banner";
 
 
 
@@ -49,6 +50,7 @@ export default function ContainerBlock({ children, ...customMeta }: ContainerBlo
             )}
         </Head> 
         <main className="dark:bg-gray-900 w-full">
+            <Banner />
             <Navbar />
             <div>{children}</div>
             <Footer />

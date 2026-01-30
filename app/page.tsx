@@ -3,6 +3,7 @@ import ContainerBlock from './components/ContainerBlock';
 import LatestCode from './components/LatestCode';
 import FavoriteProjects from './components/FavoriteProjects';
 import Hero from './components/Hero';
+import Contact from './components/Contact';
 
 
 export default function Home() {
@@ -12,8 +13,9 @@ export default function Home() {
       description="Welcome to the personal website of Sergio Lissanou, a passionate software engineer specializing in full-stack development. Explore my projects, blog posts, and latest code contributions."
     >
       <Hero />
-      <FavoriteProjects />
       <LatestCode />
+      <FavoriteProjects />
+      <Contact />
     </ContainerBlock>
   );
 }

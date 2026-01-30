@@ -52,6 +52,7 @@ export default function ContainerBlock({ children, ...customMeta }: ContainerBlo
         <main className="dark:bg-gray-900 w-full">
             <Banner />
             <Navbar />
+            
             <div>{children}</div>
             <Footer />
         </main>
